@@ -1,3 +1,5 @@
+			// Code Not Correct
+
 int ft_atoi(const char *str)
 {
 	int i;
@@ -32,6 +34,6 @@ int ft_atoi(const char *str)
 #include <stdio.h>
 int main()
 {
-	printf("%d\n", ft_atoi("	  123a456"));
-	printf("%d", atoi("	  123a456"));
+	printf("%d\n", ft_atoi("  -123qw"));
+	printf("%d", atoi("  -123qw"));
 }

@@ -10,6 +10,7 @@ void *ft_memset(void *b, int c, size_t len)
     return (temp);
 }
   //disable just for use this function in another function main redefinition
+  /*
 int main()
 {
     char str[] = "programming for you langauge";
@@ -21,7 +22,7 @@ int main()
     printf("%s\n", str1);
 }
 
-
+*/
 /*
 
 void *my_memset(void *b, int c, size_t len)
