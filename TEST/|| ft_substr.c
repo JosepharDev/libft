@@ -4,13 +4,13 @@
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
     int i = 0;
-    char *ptr = (char *)s;
+    char *ptr = NULL;
     ptr = malloc(len * sizeof(char) + 1);
     if(ptr == NULL)
         return (NULL);
     while(len)
     {
-        ptr[i] = s[start];
+        ptr[i] = *s+start;
         i++;
         start++;
         len--;
@@ -22,5 +22,6 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 
 int main()
 {
-    printf("%s\n", ft_substr("helljjdljmnsdo", 2, 5));
+    const char s[] = "helljjdljmnsdo";
+    printf("%s\n", ft_substr(s, 2, 5));
 }

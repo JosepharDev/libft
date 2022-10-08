@@ -3,26 +3,24 @@
 void *ft_memset(void *b, int c, size_t len)
 {
     char *temp = (char *)b;
-    while(len)
+    while(len--)
     {
-        *temp = c;
-        len--;
-        temp++;
+        *temp++ = c;
     }
     return (temp);
 }
-/*  disable just for use this function in another function main redefinition
+  //disable just for use this function in another function main redefinition
 int main()
 {
     char str[] = "programming for you langauge";
-    memset(str + 12, '?', 1);
+    memset(str + 12 , '?', 2);
     printf("%s\n", str);
 
     char str1[] = "programming for you langauge";
-    ft_memset(str1 + 12, '?', 1);
+    ft_memset(str1 + 12 , '?', 2);
     printf("%s\n", str1);
 }
-*/
+
 
 /*
 
