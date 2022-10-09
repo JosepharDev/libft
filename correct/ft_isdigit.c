@@ -16,12 +16,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <ctype.h>
-#include <stdio.h>
-int main()
-{
-    printf("%d\n", ft_isdigit(50));    
-    printf("%d\n", isdigit(50));    
-}
-*/

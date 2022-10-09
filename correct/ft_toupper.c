@@ -16,12 +16,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-    printf("%d\n", ft_toupper(67));
-    printf("%d\n", toupper(67));
-}
-*/

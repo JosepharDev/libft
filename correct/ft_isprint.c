@@ -16,11 +16,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main(){
-    printf("%d\n", ft_isprint(97));
-    printf("%d\n", isprint(97));
-}
-*/
