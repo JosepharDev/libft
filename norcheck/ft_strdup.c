@@ -1,3 +1,4 @@
+#include "ft_strlen.c"
 char *ft_strdup(const char *s1)
 {
   int i = 0;

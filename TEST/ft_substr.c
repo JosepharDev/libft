@@ -19,8 +19,8 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     return (ptr);
 }
 
-int main()
-{
-    const char s[] = "helljjdljmnsdo";
-    printf("%s\n", ft_substr(s, 2, 5));
-}
+// int main()
+// {
+//     const char s[] = "helljjdljmnsdo";
+//     printf("%s\n", ft_substr(s, 2, 5));
+// }
