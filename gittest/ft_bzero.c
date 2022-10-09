@@ -5,7 +5,14 @@ void	ft_bzero(void *s, size_t n)
 	while (n--)
 		*((unsigned char *)(s + n)) = 0;
 }
+//////////////
 
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	ft_memset(s, 0, n);
+}
 
 //////////
 
