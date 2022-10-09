@@ -3,7 +3,7 @@
 
 #include <string.h>
 #include <stdio.h>
-#include "../../libft/part1/ft_strchr.c"
+#include "../ft_strchr.c"
 char *ft_strrchr(const char *s, int c)
 {
   /*her*/char *found, *p; // i remove "const" from this line but the code work 
@@ -21,8 +21,6 @@ char *ft_strrchr(const char *s, int c)
 }
 int main()
 {
-	char *str = ft_strrchr("helleo", 32);
-	char *st = strrchr("helleo", 32);
-	printf("%s\n" ,str);
-	printf("%s\n" ,st);
+	printf("%s\n",ft_strrchr("helleo", 32));
+	printf("%s\n",strrchr("helleo", 32));
 }
