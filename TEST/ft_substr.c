@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+/////    more cases to check
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
     int i = 0;
@@ -10,7 +10,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         return (NULL);
     while(len)
     {
-        ptr[i] = *s+start;
+        ptr[i] = s[start];
         i++;
         start++;
         len--;

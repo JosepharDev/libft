@@ -22,18 +22,19 @@ char *ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	if(!set)
 		return (ft_strdup(s1));
-	end = strlen(s1);
-	while(search(s1[beg], set) == 0)
+	end = strlen(s1) - 1; //// learn about why -1 use pythontuto
+	while(s1[beg] && search(s1[beg], set) == 0)
 		beg++;
-	while(search(s1[end], set) == 0)
+	while(s1[end] && search(s1[end], set) == 0)
 		end--;
 	size_t j = end - beg;
 	char *substr = NULL;
 	substr = ft_substr(s1, beg,  j + 1);
 	return (substr);
 }
+/////////////	code not working god in this case ft_strtrim("helyoussefyahyahelhle", "hel"));
 
 int main()
 {
-	printf("%s\n", ft_strtrim("helyoussefyahyahel", "hel"));
+	printf("%s\n", ft_strtrim("helyoussefyahyahelhle", "hel"));
 }
