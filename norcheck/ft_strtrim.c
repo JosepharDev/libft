@@ -3,13 +3,15 @@
 #include <stdio.h>
 #include "../norcheck/ft_strdup.c"
 //#include "../norcheck/ft_strlen.c"
-#include "ft_substr.c"
+#include "../norcheck/ft_substr.c"
 static int search(char c, const char *str)
 {
-	while(*str)
+	int i = 0;
+	while(str[i] != '\0')
 	{
-		if(c == *str++)
+		if(c == str[i])
 			return (0);
+		i++;
 	}
 	return (1);
 }
@@ -22,7 +24,7 @@ char *ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	if(!set)
 		return (ft_strdup(s1));
-	end = strlen(s1) - 1; //// learn about why -1 use pythontuto
+	end = strlen(s1) - 1; //// w
 	while(s1[beg] && search(s1[beg], set) == 0)
 		beg++;
 	while(s1[end] && search(s1[end], set) == 0)
@@ -32,9 +34,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	substr = ft_substr(s1, beg,  j + 1);
 	return (substr);
 }
-/////////////	code not working god in this case ft_strtrim("helyoussefyahyahelhle", "hel"));
-
 int main()
 {
-	printf("%s\n", ft_strtrim("helyoussefyahyahelhle", "hel"));
+	printf("%s\n", ft_strtrim("helyoussefyahyahhhel", "hel"));
 }
