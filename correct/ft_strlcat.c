@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 14:09:53 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/11 14:12:37 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/11 14:01:00 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/11 14:01:09 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	char	*fnd;
-	char	*ptr;
+	size_t	i;
+	size_t	j;
 
-	if (c == '\0')
-		return (ft_strchr (s, '\0'));
-	fnd = NULL;
-	while ((ptr = ft_strchr (s, c)) != NULL) //norm error in this line 
-	{  
-		fnd = ptr;
-		s = ptr + 1;
+	i = 0;
+	j = 0;
+	while (dst[i] && i < dstsize)
+		i++;
+	while (src[j] && (i + j + 1) < dstsize)
+	{
+		dst[i + j] = src[j];
+		j++;
 	}
-	return (fnd);
+	if (i < dstsize)
+		dst[i + j] = '\0';
+	return (i + ft_strlen(src));
 }

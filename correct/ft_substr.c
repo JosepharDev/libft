@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 14:09:53 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/11 14:12:37 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/11 14:24:58 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/11 14:25:00 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*fnd;
+	int		i;
 	char	*ptr;
 
-	if (c == '\0')
-		return (ft_strchr (s, '\0'));
-	fnd = NULL;
-	while ((ptr = ft_strchr (s, c)) != NULL) //norm error in this line 
-	{  
-		fnd = ptr;
-		s = ptr + 1;
+	i = 0;
+	ptr = NULL;
+	ptr = malloc(len * sizeof(char) + 1);
+	if (ptr == NULL)
+		return (NULL);
+	while (len)
+	{
+		ptr[i] = s[start];
+		i++;
+		start++;
+		len--;
 	}
-	return (fnd);
+	ptr[i] = '\0';
+	return (ptr);
 }

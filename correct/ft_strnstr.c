@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 14:09:53 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/11 14:12:37 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/11 14:08:21 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/11 14:09:31 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char	*fnd;
-	char	*ptr;
+	size_t	i;
+	size_t	needlen;
 
-	if (c == '\0')
-		return (ft_strchr (s, '\0'));
-	fnd = NULL;
-	while ((ptr = ft_strchr (s, c)) != NULL) //norm error in this line 
-	{  
-		fnd = ptr;
-		s = ptr + 1;
+	if (*needle == 0)
+		return ((char *) haystack);
+	i = 0;
+	needlen = ft_strlen(needle);
+	while (haystack[i] != '\0' && i <= len)
+	{
+		if (haystack[i] == *needle && len - 1 >= needlen
+			&& ft_strncmp(&haystack[i], needle, needlen) == 0)
+			return ((char *) &haystack[i]);
+		i++;
 	}
-	return (fnd);
+	return (NULL);
 }

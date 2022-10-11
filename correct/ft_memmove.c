@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 14:09:53 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/11 14:12:37 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/11 13:49:10 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/11 13:51:43 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_memmove(void *dest, const void *src, size_t count)
 {
-	char	*fnd;
-	char	*ptr;
+	char		*tmp;
+	const char	*s;
 
-	if (c == '\0')
-		return (ft_strchr (s, '\0'));
-	fnd = NULL;
-	while ((ptr = ft_strchr (s, c)) != NULL) //norm error in this line 
-	{  
-		fnd = ptr;
-		s = ptr + 1;
+	if (dest <= src)
+	{
+		tmp = dest;
+		s = src;
+		while (count--)
+			*tmp++ = *s++;
 	}
-	return (fnd);
+	else
+	{
+		tmp = dest;
+		tmp += count;
+		s = src;
+		s += count;
+		while (count--)
+			*--tmp = *--s;
+	}
+	return ((char *)dest);
 }

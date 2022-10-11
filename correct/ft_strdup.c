@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 14:09:53 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/11 14:12:37 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/11 13:55:32 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/11 13:59:33 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strdup(const char *s1)
 {
-	char	*fnd;
-	char	*ptr;
+	int		i;
+	char	*copy;
+	int		len;
 
-	if (c == '\0')
-		return (ft_strchr (s, '\0'));
-	fnd = NULL;
-	while ((ptr = ft_strchr (s, c)) != NULL) //norm error in this line 
-	{  
-		fnd = ptr;
-		s = ptr + 1;
+	len = ft_strlen(s1);
+	copy = (char *)malloc(len * sizeof(char) + 1);
+	if (copy == NULL)
+		return (NULL);
+	while (*s1)
+	{
+		copy[i] = *s1;
+		i++;
+		s1++;
 	}
-	return (fnd);
+	copy[i] = '\0';
+	return (copy);
 }
