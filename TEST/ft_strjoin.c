@@ -7,8 +7,10 @@ char *ft_strjoin(char const *s1, char const *s2)
     char *str = malloc(strlen(s1) + strlen(s2) + 1);  // use FT_STRLEN
     if(str == NULL)
         return (NULL);
-    strcpy(str, s1);  // use strlcpy
-    strcat(str, s2);  // use strlcat
+        int ls = strlen(s2);
+        int ls1 = strlen(s1);
+    strlcpy(str, s1, ls + 1);  // use strlcpy
+    strlcat(str, s2, ls1 + ls + 1);  // use strlcat
     return (str);
 
 }

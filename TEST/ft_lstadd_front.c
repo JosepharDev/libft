@@ -8,5 +8,8 @@ struct s_list *next;
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *lst;
+	if(new && lst)
+		new->next = *lst;
+	if(new)
+		*lst = new;
 }
