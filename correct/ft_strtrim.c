@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 static int	search(char c, const char *str)
 {
 	int	i;
