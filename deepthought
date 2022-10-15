@@ -1,0 +1,1332 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r9p5.1337.ma
+Darwin 18.7.0 x86_64
+$> date
+Sat Oct 15 19:47:31 +01 2022
+$> gcc --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= Compiling libft ==============================================================
+$> make all
+hani kan commpili[1;32m ft_isalpha.c [0makhay sat
+hani kan commpili[1;32m ft_isdigit.c [0makhay sat
+hani kan commpili[1;32m ft_isalnum.c [0makhay sat
+hani kan commpili[1;32m ft_isascii.c [0makhay sat
+hani kan commpili[1;32m ft_strlen.c [0makhay sat
+hani kan commpili[1;32m ft_toupper.c [0makhay sat
+hani kan commpili[1;32m ft_tolower.c [0makhay sat
+hani kan commpili[1;32m ft_strchr.c [0makhay sat
+hani kan commpili[1;32m ft_strncmp.c [0makhay sat
+hani kan commpili[1;32m ft_strnstr.c [0makhay sat
+hani kan commpili[1;32m ft_strlcpy.c [0makhay sat
+hani kan commpili[1;32m ft_strlcat.c [0makhay sat
+hani kan commpili[1;32m ft_atoi.c [0makhay sat
+hani kan commpili[1;32m ft_strdup.c [0makhay sat
+hani kan commpili[1;32m ft_substr.c [0makhay sat
+hani kan commpili[1;32m ft_split.c [0makhay sat
+hani kan commpili[1;32m ft_strrchr.c [0makhay sat
+hani kan commpili[1;32m ft_strjoin.c [0makhay sat
+hani kan commpili[1;32m ft_strmapi.c [0makhay sat
+hani kan commpili[1;32m ft_putchar_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putstr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putendl_fd.c [0makhay sat
+hani kan commpili[1;32m ft_isprint.c [0makhay sat
+hani kan commpili[1;32m ft_putnbr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_strtrim.c [0makhay sat
+hani kan commpili[1;32m ft_memcpy.c [0makhay sat
+hani kan commpili[1;32m ft_memmove.c [0makhay sat
+hani kan commpili[1;32m ft_memset.c [0makhay sat
+hani kan commpili[1;32m ft_memcmp.c [0makhay sat
+hani kan commpili[1;32m ft_memchr.c [0makhay sat
+hani kan commpili[1;32m ft_bzero.c [0makhay sat
+hani kan commpili[1;32m ft_calloc.c [0makhay sat
+hani kan commpili[1;32m ft_itoa.c [0makhay sat
+[1;31m------safi done------[0m
+
+$> make libft.a
+hani kan commpili[1;32m ft_isalpha.c [0makhay sat
+hani kan commpili[1;32m ft_isdigit.c [0makhay sat
+hani kan commpili[1;32m ft_isalnum.c [0makhay sat
+hani kan commpili[1;32m ft_isascii.c [0makhay sat
+hani kan commpili[1;32m ft_strlen.c [0makhay sat
+hani kan commpili[1;32m ft_toupper.c [0makhay sat
+hani kan commpili[1;32m ft_tolower.c [0makhay sat
+hani kan commpili[1;32m ft_strchr.c [0makhay sat
+hani kan commpili[1;32m ft_strncmp.c [0makhay sat
+hani kan commpili[1;32m ft_strnstr.c [0makhay sat
+hani kan commpili[1;32m ft_strlcpy.c [0makhay sat
+hani kan commpili[1;32m ft_strlcat.c [0makhay sat
+hani kan commpili[1;32m ft_atoi.c [0makhay sat
+hani kan commpili[1;32m ft_strdup.c [0makhay sat
+hani kan commpili[1;32m ft_substr.c [0makhay sat
+hani kan commpili[1;32m ft_split.c [0makhay sat
+hani kan commpili[1;32m ft_strrchr.c [0makhay sat
+hani kan commpili[1;32m ft_strjoin.c [0makhay sat
+hani kan commpili[1;32m ft_strmapi.c [0makhay sat
+hani kan commpili[1;32m ft_putchar_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putstr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putendl_fd.c [0makhay sat
+hani kan commpili[1;32m ft_isprint.c [0makhay sat
+hani kan commpili[1;32m ft_putnbr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_strtrim.c [0makhay sat
+hani kan commpili[1;32m ft_memcpy.c [0makhay sat
+hani kan commpili[1;32m ft_memmove.c [0makhay sat
+hani kan commpili[1;32m ft_memset.c [0makhay sat
+hani kan commpili[1;32m ft_memcmp.c [0makhay sat
+hani kan commpili[1;32m ft_memchr.c [0makhay sat
+hani kan commpili[1;32m ft_bzero.c [0makhay sat
+hani kan commpili[1;32m ft_calloc.c [0makhay sat
+hani kan commpili[1;32m ft_itoa.c [0makhay sat
+
+$> make fclean
+[1;33mCleaned[0m
+
+$> make re
+[1;33mCleaned[0m
+hani kan commpili[1;32m ft_isalpha.c [0makhay sat
+hani kan commpili[1;32m ft_isdigit.c [0makhay sat
+hani kan commpili[1;32m ft_isalnum.c [0makhay sat
+hani kan commpili[1;32m ft_isascii.c [0makhay sat
+hani kan commpili[1;32m ft_strlen.c [0makhay sat
+hani kan commpili[1;32m ft_toupper.c [0makhay sat
+hani kan commpili[1;32m ft_tolower.c [0makhay sat
+hani kan commpili[1;32m ft_strchr.c [0makhay sat
+hani kan commpili[1;32m ft_strncmp.c [0makhay sat
+hani kan commpili[1;32m ft_strnstr.c [0makhay sat
+hani kan commpili[1;32m ft_strlcpy.c [0makhay sat
+hani kan commpili[1;32m ft_strlcat.c [0makhay sat
+hani kan commpili[1;32m ft_atoi.c [0makhay sat
+hani kan commpili[1;32m ft_strdup.c [0makhay sat
+hani kan commpili[1;32m ft_substr.c [0makhay sat
+hani kan commpili[1;32m ft_split.c [0makhay sat
+hani kan commpili[1;32m ft_strrchr.c [0makhay sat
+hani kan commpili[1;32m ft_strjoin.c [0makhay sat
+hani kan commpili[1;32m ft_strmapi.c [0makhay sat
+hani kan commpili[1;32m ft_putchar_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putstr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putendl_fd.c [0makhay sat
+hani kan commpili[1;32m ft_isprint.c [0makhay sat
+hani kan commpili[1;32m ft_putnbr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_strtrim.c [0makhay sat
+hani kan commpili[1;32m ft_memcpy.c [0makhay sat
+hani kan commpili[1;32m ft_memmove.c [0makhay sat
+hani kan commpili[1;32m ft_memset.c [0makhay sat
+hani kan commpili[1;32m ft_memcmp.c [0makhay sat
+hani kan commpili[1;32m ft_memchr.c [0makhay sat
+hani kan commpili[1;32m ft_bzero.c [0makhay sat
+hani kan commpili[1;32m ft_calloc.c [0makhay sat
+hani kan commpili[1;32m ft_itoa.c [0makhay sat
+[1;31m------safi done------[0m
+
+$> make clean
+[1;33mCleaned[0m
+
+$> make bonus
+make: *** No rule to make target `bonus'.  Stop.
+hani kan commpili[1;32m ft_isalpha.c [0makhay sat
+hani kan commpili[1;32m ft_isdigit.c [0makhay sat
+hani kan commpili[1;32m ft_isalnum.c [0makhay sat
+hani kan commpili[1;32m ft_isascii.c [0makhay sat
+hani kan commpili[1;32m ft_strlen.c [0makhay sat
+hani kan commpili[1;32m ft_toupper.c [0makhay sat
+hani kan commpili[1;32m ft_tolower.c [0makhay sat
+hani kan commpili[1;32m ft_strchr.c [0makhay sat
+hani kan commpili[1;32m ft_strncmp.c [0makhay sat
+hani kan commpili[1;32m ft_strnstr.c [0makhay sat
+hani kan commpili[1;32m ft_strlcpy.c [0makhay sat
+hani kan commpili[1;32m ft_strlcat.c [0makhay sat
+hani kan commpili[1;32m ft_atoi.c [0makhay sat
+hani kan commpili[1;32m ft_strdup.c [0makhay sat
+hani kan commpili[1;32m ft_substr.c [0makhay sat
+hani kan commpili[1;32m ft_split.c [0makhay sat
+hani kan commpili[1;32m ft_strrchr.c [0makhay sat
+hani kan commpili[1;32m ft_strjoin.c [0makhay sat
+hani kan commpili[1;32m ft_strmapi.c [0makhay sat
+hani kan commpili[1;32m ft_putchar_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putstr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_putendl_fd.c [0makhay sat
+hani kan commpili[1;32m ft_isprint.c [0makhay sat
+hani kan commpili[1;32m ft_putnbr_fd.c [0makhay sat
+hani kan commpili[1;32m ft_strtrim.c [0makhay sat
+hani kan commpili[1;32m ft_memcpy.c [0makhay sat
+hani kan commpili[1;32m ft_memmove.c [0makhay sat
+hani kan commpili[1;32m ft_memset.c [0makhay sat
+hani kan commpili[1;32m ft_memcmp.c [0makhay sat
+hani kan commpili[1;32m ft_memchr.c [0makhay sat
+hani kan commpili[1;32m ft_bzero.c [0makhay sat
+hani kan commpili[1;32m ft_calloc.c [0makhay sat
+hani kan commpili[1;32m ft_itoa.c [0makhay sat
+[1;31m------safi done------[0m
+
+$> ls -la libft.a
+-rw-r--r--  1 yoyahya  2019  31856 Oct 15 19:47 /Users/yoyahya/francinette/temp/libft/war-machine/dirlibft/libft.a
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./user_exe 10
+$> diff -U 3 user_output_test10 test10.output
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./user_exe 11
+$> diff -U 3 user_output_test11 test11.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part1_functions/ft_strnstr/user_output_test09	2022-10-15 19:47:52.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part1_functions/ft_strnstr/test09.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -1 +1 @@$
+-dolor sit amet$
+\ No newline at end of file$
++NULL$
+\ No newline at end of file$
+
+Diff KO :(
+= Test 10 ==================================================
+$> ./user_exe 10
+$> diff -U 3 user_output_test10 test10.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./user_exe 10
+$> diff -U 3 user_output_test10 test10.output
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./user_exe 11
+$> diff -U 3 user_output_test11 test11.output
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./user_exe 12
+$> diff -U 3 user_output_test12 test12.output
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./user_exe 13
+$> diff -U 3 user_output_test13 test13.output
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./user_exe 14
+$> diff -U 3 user_output_test14 test14.output
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./user_exe 15
+$> diff -U 3 user_output_test15 test15.output
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./user_exe 16
+$> diff -U 3 user_output_test16 test16.output
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./user_exe 17
+$> diff -U 3 user_output_test17 test17.output
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./user_exe 18
+$> diff -U 3 user_output_test18 test18.output
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./user_exe 19
+$> diff -U 3 user_output_test19 test19.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_substr/user_output_test05	2022-10-15 19:47:55.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_substr/test05.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -1 +0,0 @@$
+-M-^P+Däş^?$
+\ No newline at end of file$
+
+Diff KO :(
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strjoin/user_output_test03	2022-10-15 19:47:55.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strjoin/test03.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -0,0 +1 @@$
++lorem ipsum$
+\ No newline at end of file$
+
+Diff KO :(
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/user_output_test01	2022-10-15 19:47:55.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/test01.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -1,3 +1,3 @@$
+ lorem $
+  ipsum 	 dolor $
+- sit 	 ame$
+\ No newline at end of file$
++ sit 	 amet$
+\ No newline at end of file$
+
+Diff KO :(
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/user_output_test02	2022-10-15 19:47:55.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/test02.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -1 +1 @@$
+-lorem ipsum dolor sit a$
+\ No newline at end of file$
++lorem ipsum dolor sit am$
+\ No newline at end of file$
+
+Diff KO :(
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/user_output_test03	2022-10-15 19:47:55.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/test03.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -1 +1 @@$
+-orem ipsum dolor sit ame$
+\ No newline at end of file$
++orem ipsum dolor sit amet$
+\ No newline at end of file$
+
+Diff KO :(
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+--- /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/user_output_test04	2022-10-15 19:47:56.000000000 +0100$
++++ /Users/yoyahya/francinette/temp/libft/war-machine/tests/Part2_functions/ft_strtrim/test04.output	2022-10-15 10:13:44.000000000 +0100$
+@@ -1 +1 @@$
+-orem ipsum dolor sit a$
+\ No newline at end of file$
++orem ipsum dolor sit am$
+\ No newline at end of file$
+
+Diff KO :(
+= Test 5 ===================================================
+$> ./user_exe 05
+Command './user_exe 05' got killed by an Abort
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./user_exe 10
+$> diff -U 3 user_output_test10 test10.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+$> clang -Wextra -Wall -Werror -g3 -fsanitize=address main.c libft.a -o user_exe
+
+= Test 1 ===================================================
+$> ./user_exe 01
+$> diff -U 3 user_output_test01 test01.output
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./user_exe 02
+$> diff -U 3 user_output_test02 test02.output
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./user_exe 03
+$> diff -U 3 user_output_test03 test03.output
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./user_exe 04
+$> diff -U 3 user_output_test04 test04.output
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./user_exe 05
+$> diff -U 3 user_output_test05 test05.output
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./user_exe 06
+$> diff -U 3 user_output_test06 test06.output
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./user_exe 07
+$> diff -U 3 user_output_test07 test07.output
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./user_exe 08
+$> diff -U 3 user_output_test08 test08.output
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./user_exe 09
+$> diff -U 3 user_output_test09 test09.output
+
+Diff OK :D
