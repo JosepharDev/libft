@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memset(void *b, int c, size_t len)
 {
 	char	*temp;
@@ -20,6 +21,6 @@ void	*ft_memset(void *b, int c, size_t len)
 	{
 		*temp++ = c;
 	}
-	return (temp);
+	return (b);
 }
 	// like return ((void *) temp);

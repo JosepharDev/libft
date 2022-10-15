@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char	*tdst;
@@ -18,6 +19,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	tdst = (char *) dst;
 	tsrc = (char *) src;
+	if (!dst && !src)
+		return (NULL);
 	while (n)
 	{
 		*tdst = *tsrc;

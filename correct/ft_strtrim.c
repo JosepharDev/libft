@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static int	search(char c, const char *str)
 {
 	int	i;
@@ -39,12 +40,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	if (!set)
 		return (ft_strdup(s1));
-	end = strlen(s1) - 1;
+	end = ft_strlen(s1) - 1;
 	while (s1[beg] && search(s1[beg], set) == 0)
 		beg++;
 	while (s1[end] && search(s1[end], set) == 0)
 		end--;
 	j = end - beg;
-	substr = ft_substr(s1, beg, j + 1);
+	substr = ft_substr(s1, beg, j);
 	return (substr);
 }

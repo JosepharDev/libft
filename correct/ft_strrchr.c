@@ -9,6 +9,7 @@
 /*   Updated: 2022/10/11 14:12:37 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -18,8 +19,9 @@ char	*ft_strrchr(const char *s, int c)
 	if (c == '\0')
 		return (ft_strchr (s, '\0'));
 	fnd = NULL;
-	while ((ptr = ft_strchr (s, c)) != NULL) //norm error in this line 
-	{  
+	while ((ft_strchr (s, c)) != NULL)
+	{
+		ptr = ft_strchr(s, c);
 		fnd = ptr;
 		s = ptr + 1;
 	}
