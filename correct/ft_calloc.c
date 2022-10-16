@@ -12,10 +12,11 @@
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size) // problem if count * size overflow range size_t 
 {
 	void	*p;
-
+	if (size && count > SIZE_MAX / size)
+		return (NULL);
 	p = malloc(count * size);
 	if (p == NULL)
 		return (NULL);

@@ -35,5 +35,5 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 		while (count--)
 			*--tmp = *--s;
 	}
-	return ((char *)dest);
+	return ((char *)dest);// should i return char * or void *
 }

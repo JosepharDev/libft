@@ -29,5 +29,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return (temp1[i] - temp2[i]);
 		i++;
 	}
-	return (0);
+	return (0); // do it strncmp withou \0 condition and what if s1 and s2 point to NULL test it with there function
+	//should handle if n greater than size of s1 and s1
 }
