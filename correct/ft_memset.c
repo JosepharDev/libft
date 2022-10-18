@@ -16,10 +16,10 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	char	*temp;
 
-	temp = (char *)b; // should i check if b == NULL or not
+	temp = (char *)b;
 	while (len--)
 	{
-		*temp++ = c; // should i use (unsigned char) c or not
+		*temp++ = c;
 	}
 	return (b);
 }

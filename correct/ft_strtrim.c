@@ -32,19 +32,22 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	j;
 	char	*substr;
+	size_t	m;
 
 	beg = 0;
 	end = 0;
+	m = 1;
 	substr = NULL;
 	if (!s1)
 		return (NULL);
 	if (!set)
 		return (ft_strdup(s1));
-	end = ft_strlen(s1) - 1;
+	end = ft_strlen(s1);
 	while (s1[beg] && search(s1[beg], set) == 0)
 		beg++;
-	while (s1[end] && search(s1[end], set) == 0)
-		end--;
+	while (s1[end - m] && search(s1[end - m], set) == 0)
+	m++;
+	end -= m - 1;
 	j = end - beg;
 	substr = ft_substr(s1, beg, j);
 	return (substr);
