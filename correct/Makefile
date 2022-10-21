@@ -21,7 +21,8 @@ FILES= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_strlen \
 	   ft_putchar_fd ft_putstr_fd ft_putendl_fd ft_isprint \
 	   ft_putnbr_fd ft_strtrim ft_memcpy ft_memmove ft_memset \
 	   ft_memcmp ft_memchr ft_bzero ft_calloc
-BFILES  = ft_lstnew ft_lstadd_front ft_lstadd_back 
+BFILES  = ft_lstnew ft_lstadd_front ft_lstadd_back ft_lstsize ft_lstlast \
+		ft_lstdelone ft_lstclear ft_lstiter
 OBJ=$(FILES:=.o)
 BOBJ=$(BFILES:=.o)
 NAME=libft.a
