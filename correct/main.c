@@ -4,28 +4,29 @@
 #include <fcntl.h>
 int main()
 {
-	// char c = 'A';
-	// int fd = creat("text", S_IRWXU);
-	// openat(fd, "text", O_RDWR);
-	// ft_putchar_fd(c, fd);
+	int d = 222;
+	t_list *head = malloc(sizeof(t_list));
+	head->content =&d;
 
+	t_list *shead = malloc(sizeof(t_list));
+	shead->content = &d;
 
-	// char str[] = "hello world";
-	// int fd = creat("text", S_IRWXU);
-	// openat(fd, "text", O_RDWR);
-	// ft_putendl_fd(str, fd);
+	head->next = shead;
+	shead = malloc(sizeof(t_list));
+	shead->content =&d;
+	shead->next = NULL;
+	head->next->next = shead;
 
-	// int nbr = 123456254;
-	// int fd = creat("text", S_IRWXU);
-	// openat(fd, "text", O_RDWR);
-	// ft_putnbr_fd(nbr, fd);
+	t_list *backnode = malloc(sizeof(t_list));
 
-	// size_t n = 8;
-    // char str[] = "youssef yahya";
-    // //char str1[100] ={1,2,3,4,5,6};
-    // //char c = 'd';
-    // //printf("%s\n", ft_memmove(str, str, n));
-    //  ft_memset(NULL, 'l', n);
-    // printf("%s\n", str);
+	backnode->content = &d;
+	backnode->next = NULL;
+	ft_lstadd_back(&head, backnode);
+	
+	while(head != NULL)
+	{
+		printf("%d\n", *((int *)head->content));
+		head = head->next;
+	}
 }
  
