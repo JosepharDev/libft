@@ -18,10 +18,11 @@ int main()
 	head->next->next = shead;
 
 	t_list *backnode = malloc(sizeof(t_list));
-
-	backnode->content = &d;
+	int c = 15;
+	backnode->content = &c;
 	backnode->next = NULL;
-	ft_lstadd_back(&head, backnode);
+	t_list *ptr = NULL;
+	ft_lstadd_front(&ptr, backnode);
 	
 	while(head != NULL)
 	{
