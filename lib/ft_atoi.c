@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 20:18:19 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/10 20:21:01 by yoyahya          ###   ########.fr       */
+/*   Updated: 2022/10/23 14:34:32 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ int	ft_atoi(const char *str)
 	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\0')
 	{
 		nbr = (nbr * 10) + str[i++] - 48;
-		if (nbr >= 9223372036854775807 && sign == 1)
+		if (nbr >= LLONG_MAX && sign == 1)
 			return (-1);
-		else if (nbr >= 9223372036854775807 && sign == -1)
+		else if (nbr >= LLONG_MAX && sign == -1)
 			return (0);
 	}
 	return ((int)(nbr * sign));

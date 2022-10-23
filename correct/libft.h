@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 09:28:28 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/14 09:28:30 by yoyahya          ###   ########.fr       */
+/*   Updated: 2022/10/23 16:51:29 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include <unistd.h>
+# include<limits.h>
 
 typedef struct s_list
 {
