@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/20 12:24:05 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/20 12:24:08 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/20 12:20:22 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/25 15:07:51 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*head;
-
-	head = *lst;
-	if (*lst)
-	{
-		head = ft_lstlast(*lst);
-		head->next = new;
-	}
-	else
+	if (!new || !lst)
+		return ;
+	if (new && lst)
+		new->next = *lst;
+	if (new)
 		*lst = new;
 }

@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/15 11:25:56 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/15 11:25:59 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/21 10:42:54 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/25 16:00:39 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	
+	t_list	*head;
+	t_list	*tmp;
+
+	if (!lst)
+		return ;
+	head = *lst;
+	while (head)
+	{
+		tmp = head->next;
+		ft_lstdelone(head, del);
+		head = tmp;
+	}
+	*lst = NULL;
 }
