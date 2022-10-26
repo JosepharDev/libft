@@ -6,16 +6,14 @@
 /*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 09:28:28 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/25 09:10:51 by yoyahya          ###   ########.fr       */
+/*   Updated: 2022/10/26 20:21:56 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
 # include <stdlib.h>
-# include <fcntl.h>
 # include <unistd.h>
 # include<limits.h>
 

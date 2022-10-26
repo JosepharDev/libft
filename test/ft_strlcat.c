@@ -6,7 +6,7 @@
 /*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 14:01:00 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/23 12:04:41 by yoyahya          ###   ########.fr       */
+/*   Updated: 2022/10/26 15:49:01 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
+	if (dst == NULL && dstsize == 0)
+		return (ft_strlen(src));
 	while (dst[i] && i < dstsize)
 		i++;
 	while (src[j] && (i + j + 1) < dstsize)
@@ -30,3 +32,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
+#include <string.h>
+#include <stdio.h>
+// int main()
+// {
+// 	// char str[] = "hello";
+// 	// char st[] = "world";//
+// 	// printf("%lu\n", ft_strlcat(str, st, 10));
+// 	// printf("%s\n", str);
+	
+// 	// printf("%lu\n", strlcat(str, st, 10));
+// 	// printf("%s\n", str);
+// }

@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoyahya <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 08:46:26 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/21 08:46:30 by yoyahya          ###   ########.fr       */
+/*   Created: 2022/10/11 13:52:18 by yoyahya           #+#    #+#             */
+/*   Updated: 2022/10/26 18:14:36 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	if (lst == NULL)
-		return (0);
-	while (lst != NULL)
+	char	*temp;
+
+	temp = (char *)b;
+	while (len--)
 	{
-		if (lst->next == NULL)
-			return (lst);
-		lst = lst->next;
+		*temp++ = (unsigned char)c;
 	}
-	return (lst);
+	return (b);
 }
+

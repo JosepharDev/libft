@@ -6,7 +6,7 @@
 /*   By: yoyahya <yoyahya@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:42:54 by yoyahya           #+#    #+#             */
-/*   Updated: 2022/10/25 16:00:39 by yoyahya          ###   ########.fr       */
+/*   Updated: 2022/10/26 18:50:55 by yoyahya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*head;
 	t_list	*tmp;
 
-	if (!lst)
+	if (!lst || !del)
 		return ;
 	head = *lst;
 	while (head)
@@ -28,3 +28,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
+
+//
